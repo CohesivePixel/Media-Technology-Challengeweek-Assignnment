@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!- 
+	main.html
+	Shows home page
+	@author: Koen Warner (koen)
+	@version:  v1.1,  17 jun. 2014
+	(c) 2014 Koen Warner
+ -->
+
+<html>
+<head>
+<title>{{ title}}</title>
+</head>
+
+<body>
+	<img src="../static/image/hsl_logo.jpg" width="50" height="63" style="float: left">
+	<p>iarch practicum / Opleiding Informatica / Hogeschool Leiden</p>
+	
+	<br />
+	<h1>  {{title}}</h1>
+	<a href="/readevents"> <img src="../static/image/pushbutton.jpeg"
+		width="128" height="102">
+	</a>
+
+	<h2>
+		To see if the button is pressed or released goto to <a
+			href="/readevents">Events</a>
+	</h2>
+
+	<h5>Current date and time are: {{ time }}</h5>
+</body>
+</html>

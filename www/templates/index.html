@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>The Media Masters Control Centre [B]</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }} " />
+	</head>
+	<body>
+		<h1 id="title">Media Masters Control Centre [B]</h1>
+		
+		<div id="buttonsTOP">
+			<form method='get' action='reboot.htm'>
+				<button type='submit'>REBOOT</button>
+			</form>
+			
+			<form method='get' action='shutdown.htm'>
+				<button type='submit'>SHUTDOWN</button>
+			</form>
+			
+			<form method='get' action='animatie.htm'>
+				<button type='submit'>START ANIMATION</button>
+			</form>
+			
+			<form method='get' action='home.htm'>
+				<button type='submit'>HOME</button>
+			</form>
+		</div>
+		
+		<div id="buttonsTOPMIDDLE">
+			<form method='get' action='up.htm'>
+				<input type="number" min=1  max=20000 name="steps" value="1"/>
+				<button type='submit'>OMHOOG</button>
+			</form>
+			
+			<form method='get' action='down.htm'>
+				<input type="number" min=1  max=15000 name="steps" value="1"/>
+				<button type='submit'>OMLAAG</button>
+			</form>
+		</div>
+			
+		<div id="buttonsBOTTOMMIDDLE">
+			<form method='get' action='ypos.htm'>
+				<button type='submit'>Y-POS</button>
+			</form>
+
+			<form method='get' action='xpos.htm'>
+				<button type='submit'>X-POS</button>
+			</form>
+			
+		</div>
+
+		<div id="buttonsBOTTOM">
+		
+			<form method='get' action='auto_on.htm'>
+				<button type='submit'>Auto On</button>
+			</form>
+			
+			<form method='get' action='auto_off.htm'>
+				<button type='submit'>Auto Off</button>	
+			</form>
+		</div>
+	</body>	
+</html>
